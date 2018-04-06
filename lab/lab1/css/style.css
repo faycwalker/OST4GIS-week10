@@ -7,25 +7,76 @@ body {
 .map {
     position: absolute;
     right: 0px;
-    left: 340px;
+    left: 550px;
     height: 100%;
     top: 0;
 }
-
+.bluebar {
+  position: absolute;
+  left: 0px;
+  width: 200px;
+  background-color: #08295B;
+  color: white;
+  height: 100%;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+.modal {
+  text-align: center;
+  padding: 0!important;
+  position: absolute;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.model-content {
+  width: 600px;
+}
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px; /* Adjusts for spacing */
+}
+.h2 {
+  color: blue;
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  left:0px;
+  position: relative;
+}
+.modal-header {
+  background-color: red;
+  padding: 10px;
+}
+.modal-title {
+  padding: 10px;
+}
+.lowinventory {
+  background-color: red;
+  color: white;
+  width: 120px;
+  padding: 5px;
+}
 .sidebar {
-    position: absolute;
-    left: 0px;
-    width: 340px;
+    position: fixed;
+    left: 200px;
+    right: 0px;
+    width: 350px;
     top: 0;
     bottom: 0;
     overflow-y: auto;
     padding: 20px;
     padding-bottom: 60px;
+    display: inline-block;
 }
-
 .item {
     padding: 10px;
     background-color: #eee;
+    width: auto;
 }
 
 .item:not(:last-child) {
@@ -37,11 +88,20 @@ body {
     margin-top: 0;
     font-weight: bold;
 }
+.navbar{
+  right: 0px;
+  padding: 0px;
+  display: inline-block;
+}
+.dropdownMenuButton {
+  right: 0px;
+  display: inline-block;
 
+}
 .sort {
     position: fixed;
     bottom: 0;
-    left: 0;
+    right: 0px
     width: 340px;
     background-color: #fff;
     padding: 20px;

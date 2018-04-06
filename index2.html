@@ -14,13 +14,16 @@
 
   </head>
   <body>
-<!-- leftbar -->
-    <div class = "bluebar">
+    <!-- Sidebar -->
+    <div class = "bluebar"
+    <ul class="nav nav-pills nav-stacked">
     <i class="fas fa-map-marker-alt"></i>  Manufacturers<br>
     <i class="fas fa-tag"></i>  Purchases<br>
     <i class="fas fa-exclamation-triangle"></i></i> Basket Secrets<br>
    </div>
-    <!-- Sidebar -->
+       <div class="topnav">
+</div>
+
 <div class="sidebar">
   <nav class="navbar navbar-default">
     <div class="container-fluid clearfix">
@@ -47,6 +50,81 @@
   <button type="button" class="btn btn-danger" id= "modal" data-toggle="modal" data-target="#exampleModal">
     Low Inventory
   </button>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <class="modal-title" id="exampleModalLabel"><b>  Manufacturers</b>
+        <div class="modal-header">
+          This item has low inventory <br>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+                    <h5> Tandy's Basket Weavers </h5>
+                    <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Edit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Delete</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Export</a>
+            </li>
+          </ul>
+  <div class="row">
+    <div class="col-sm">
+    <b>Contact</b><br>
+      490 Freedom Drive<br>
+      Philadelphia, PA 19425
+    </div>
+    <div class="col-sm">
+      <b>Contact</b><br>
+      Senior Weaver<br>
+      dj@tbw.com<br>
+      <div class="col-sm">
+        <h2>324</h2>
+        baskets sold in past 7 days
+      </div>
+    </div>
+  </div>
+          </div>
+        <div class="modal-footer">
+            <table class="table">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Purchase</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Otto</td>
+        <td>Fruit Basket</td>
+      </tr>
+      <tr>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>Easter Basket</td>
+      </tr>
+      <tr>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>Gift Basket</td>
+      </tr>
+    </tbody>
+  </table>
+        </div>
+      </div>
+    </div>
+    <b>Sales</b>
+
+  </div>
+
       </div>
       <div class="item">
         <h2 class="item-heading">Basket Case</h2>
@@ -72,83 +150,6 @@
         <b>Sort by</b> <span class="sort-option selected">A–Z</span> <span class="sort-option">Inventory</span>
       </div>
     </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <class="modal-title" id="exampleModalLabel"><b>  Manufacturers</b>
-          <div class="modal-header">
-            This item has low inventory <br>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-                      <h5> Tandy's Basket Weavers </h5>
-                      <ul class="nav nav-pills">
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Edit</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Delete</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Export</a>
-              </li>
-            </ul>
-    <div class="row">
-      <div class="col-sm">
-      <b>Contact</b><br>
-        490 Freedom Drive<br>
-        Philadelphia, PA 19425
-      </div>
-      <div class="col-sm">
-        <b>Contact</b><br>
-        Senior Weaver<br>
-        dj@tbw.com<br>
-      </div>
-        <div class="col-sm">
-          <h1>324</h1>
-          baskets sold in past 7 days
-      </div>
-    </div>
-            </div>
-          <div class="modal-footer">
-              <table class="table">
-      <thead>
-        <tr>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Purchase</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>John</td>
-          <td>Otto</td>
-          <td>Fruit Basket</td>
-        </tr>
-        <tr>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>Easter Basket</td>
-        </tr>
-        <tr>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>Gift Basket</td>
-        </tr>
-      </tbody>
-    </table>
-          </div>
-        </div>
-      </div>
-      <b>Sales</b>
-
-    </div>
-
-
     <!-- Map -->
     <div id="map" class="map"></div>
     <!-- Javascript Imports -->
